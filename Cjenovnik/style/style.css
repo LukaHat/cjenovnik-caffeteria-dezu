@@ -122,3 +122,111 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/*Colors
+Main: #914343;
+Complementary: #439191;
+*/
+/*Header Styling*/
+header {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #914343;
+  color: white;
+}
+
+header img {
+  height: 7vh;
+}
+
+#main-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  gap: 0.5em;
+  font-size: 20px;
+}
+
+#main-title img {
+  float: left;
+}
+
+#main-title a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bebas Neue", sans-serif;
+  gap: 0.5em;
+  font-size: 17px;
+}
+
+/*Main Styling*/
+main {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  height: 93vh;
+}
+
+.drink-list {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  background-color: white;
+  color: rgb(67, 145, 145);
+  font-family: "Bebas Neue", sans-serif;
+  min-width: 360px;
+  height: 100%;
+  scroll-snap-align: center;
+}
+
+.drink-list:nth-child(n) {
+  align-self: flex-start;
+}
+
+.drink-list:last-of-type {
+  min-width: 380px;
+}
+
+.drink-list h2 {
+  font-size: 35px;
+  background-color: white;
+  padding: 20px;
+  border-bottom: 1px solid #439191;
+  position: relative;
+  top: 0px;
+  height: 5h;
+}
+
+.drink-list ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10%;
+  font-size: 25px;
+}
+
+.drink-list ul li {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.5em;
+}
+
+.drink-list ul li span {
+  color: #914343;
+}
